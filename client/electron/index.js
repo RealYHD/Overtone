@@ -6,8 +6,7 @@ const createWindow = () => {
         heigh: 600,
     });
 
-
-    win.loadFile("index.html");
+    win.loadFile("electron/index.html");
 };
 
 app.whenReady().then(() => createWindow());
