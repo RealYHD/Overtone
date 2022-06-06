@@ -26,6 +26,15 @@
  * ```
  */
 
+import { createApp } from 'vue';
 import './index.css';
 
 console.log('👋 This message is being logged by "renderer.js", included via webpack');
+
+createApp({
+    data() {
+        return {
+            message: 'Hello Vue!'
+        }
+    }
+}).mount('#app')
